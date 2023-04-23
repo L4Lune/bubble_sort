@@ -1,7 +1,5 @@
 require 'pry-byebug'
 sort_me = Array.new(10) { rand(0..10) }
-# sort_me = [8, 5, 9, 3, 1]
-# sort_me = [3, 1]
 def bubble_sort(sort_me)
     sorted_array = []
     n = sort_me.length
@@ -22,8 +20,8 @@ def bubble_sort(sort_me)
                 sorted == true
             end #if
         end #for
-        p sort_me
     end #for
+    p sort_me
 end
 
 # binding.pry

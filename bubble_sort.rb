@@ -1,6 +1,6 @@
 require 'pry-byebug'
-sort_me = Array.new(5) { rand(0..10) }
-# sort_me = [8, 5, 9, 3, 1]
+# sort_me = Array.new(5) { rand(0..10) }
+sort_me = [8, 5, 9, 3, 1]
 # sort_me = [3, 1]
 def bubble_sort(sort_me)
     sorted_array = []

@@ -4,23 +4,18 @@ def bubble_sort(sort_me)
     sorted_array = []
     n = sort_me.length
     sorted = false
+    i = 0
     
-    for iteration in 1..(n-1) do    
+    while i < sort_me.length    
         swapped = false
         for idx in 1..(n - 1) do
             if sort_me[idx - 1] > sort_me[idx]
                 (sort_me[idx - 1], sort_me[idx] = sort_me[idx], sort_me[idx - 1])
                 swapped == true
-            elsif sort_me[idx - 1] < sort_me[idx]
-                swapped == false
             end #if
         end #for
-        for idx in 1..(n - 1) do
-            if sort_me[idx - 1] < sort_me[idx]
-                sorted == true
-            end #if
-        end #for
-    end #for
+        i+=1
+    end #while
     p sort_me
 end
 
